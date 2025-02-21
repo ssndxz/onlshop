@@ -10,6 +10,7 @@ This is a backend REST API for an online store. It supports user authentication,
 - **Data Import:** Import product data from an external source using the Fake Store API.
 
 ### Project Structure
+```
 online-store/
 ├── package-lock.json
 ├── package.json
@@ -30,6 +31,7 @@ online-store/
 ├── scripts/
 │   └── import.js
 └── README.md
+```
 
 ### Setup Instructions
 #### 1. Clone the repository.
@@ -55,12 +57,12 @@ npm run import
 ```
 
 ### API Endpoints
-1. **Auth**
+#### 1. **Auth**
 | Method | Endpoint  | Description |
 |--------|----------|-------------|
 | POST   | `/api/auth/register` | Register a new user (optionally include `adminCode` to register as admin). |
 | POST   | `/api/auth/login`    | Log in and receive a JWT token. |
-2. **Products**
+#### 2. **Products**
 | Method | Endpoint        | Description |
 |--------|----------------|-------------|
 | POST   | `/api/products`     | Create a new product (admin only). |
@@ -68,12 +70,12 @@ npm run import
 | GET    | `/api/products/:id` | Retrieve a single product. |
 | PUT    | `/api/products/:id` | Update a product (admin only) |
 | DELETE | `/api/products/:id` | Delete a product (admin only) |
-3. **Orders**
+#### 3. **Orders**
 | Method  | Endpoint                  | Description |
 |---------|---------------------------|-------------|
 | POST    | `/api/orders`             | Create a new order (authenticated users). |
 | GET     | `/api/orders`             | Get orders for the logged-in user. |
-| PUT     | `/api/orders/:id`         | Uodate order for the logged-in user. |
+| PUT     | `/api/orders/:id`         | Update order for the logged-in user. |
 
 Test CRUD operations using Postman.
 
