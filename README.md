@@ -36,4 +36,4 @@ This is a backend API for an online store. It supports user authentication, prod
 - `GET /api/orders` – Get orders for the logged-in user.
 
 ## Data Import
-The script at `scripts/importProducts.js` fetches product data from [Fake Store API](https://fakestoreapi.com/products) and imports it into the database.
+The script fetches product data from [Fake Store API](https://fakestoreapi.com/products) and imports it into the database. (Change API for another data)
